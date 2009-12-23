@@ -10,7 +10,7 @@ install mvccontrib:
     build_root_dir "build"
 
 dependencies:  
-    dependency "castle.dynamicproxy"								>> "Castle.Core"
+    dependency "castle.core"                        >> "Castle.Core"
     dependency "castle.dynamicproxy"								>> "Castle.DynamicProxy"
     dependency "castle.dynamicproxy"								>> "Castle.DynamicProxy2"
     dependency "castle.activerecord"								>> "Castle.ActiveRecord"
@@ -22,7 +22,7 @@ dependencies:
     dependency "castle.components.pagination"						>> "Castle.Components.Pagination"
     dependency "castle.components.scheduler"						>> "Castle.Components.Scheduler"
     dependency "castle.components.scheduler"						>> "Castle.Components.Scheduler.WindsorExtension"
-    dependency "castle.components.validator"						>> "Castle.Components.Validator"
+    dependency "castle.components.validator"						>> "Castle.Components.Validator"    
     dependency "castle.facilities.activerecordintegration"			>> "Castle.Facilities.ActiveRecordIntegration"
     dependency "castle.facilities.automatictransactionmanagement"   >> "Castle.Facilities.AutomaticTransactionManagement"
     dependency "castle.facilities.batchregistration"				>> "Castle.Facilities.BatchRegistration"
@@ -30,9 +30,13 @@ dependencies:
     dependency "castle.facilities.logging"							>> "Castle.Facilities.Logging"
     dependency "castle.facilities.nhibernateintegration"			>> "Castle.Facilities.NHibernateIntegration"
     dependency "castle.facilities.wcfintegration"					>> "Castle.Facilities.Synchronize"
-    dependency "castle.facilities.wcfintegration"					>> "Castle.Facilities.WcfIntegration"
+    dependency "castle.facilities.wcfintegration"					>> "Castle.Facilities.WcfIntegration"    
     dependency "castle.windsor"										>> "Castle.MicroKernel"
     dependency "castle.windsor"										>> "Castle.Windsor"
+    dependency "castle.services.transaction"			>> "Castle.Services.Transaction"
+    dependency "castle.services.logging"          >> "Castle.Services.Logging.NLogIntegration"
+    dependency "castle.services.logging"          >> "Castle.Services.Logging.Log4netIntegration"
+    dependency "rhino.mocks"                      >> "Rhino.Mocks"
 
 package.category = "Web"
 package.description = "This project adds additional functionality on top of the ASP.NET MVC Framework."

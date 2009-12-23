@@ -10,7 +10,7 @@ install mvccontrib:
     build_root_dir "build"
 
 dependencies:  
-    dependency "castle.dynamicproxy"								>> "Castle.Core"
+    dependency "castle.core"                        >> "Castle.Core"
     dependency "castle.dynamicproxy"								>> "Castle.DynamicProxy"
     dependency "castle.dynamicproxy"								>> "Castle.DynamicProxy2"
     dependency "castle.activerecord"								>> "Castle.ActiveRecord"
