@@ -1,5 +1,5 @@
 ﻿install rhino.mocks:
-    get_from git("git://github.com/ayende/rhino-mocks.git")
+    get_from git("git://github.com/emmekappa/rhino-mocks.git")
     build_with psake, buildfile("default.ps1"), FrameworkVersion35    
 	with:
 		tasks Compile 
